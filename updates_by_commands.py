@@ -1,3 +1,9 @@
+#name = "updates_commands_rust"
+#version = "0.1.0"
+#by = "Obaid Aldosari"
+#github = "https://github.com/ODosari/UpdatesTerminalCommandsRust"
+
+
 # Import the subprocess module for running shell commands
 import subprocess
 
