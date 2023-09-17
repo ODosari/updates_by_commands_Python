@@ -1,7 +1,7 @@
-#name = "updates_commands_python"
-#version = "0.1.0"
-#by = "Obaid Aldosari"
-#github = "https://github.com/ODosari/UpdatesTerminalCommandsPython"
+# Name = "updates_commands_python"
+# Version = "0.1.0"
+# By = "Obaid Aldosari"
+# GitHub = "https://github.com/ODosari/UpdatesTerminalCommandsPython"
 
 
 # Import the subprocess module for running shell commands
