@@ -86,5 +86,3 @@ if __name__ == "__main__":
 Feel free to fork the project, open a PR, or submit an issue.
 
 ---
-
-You can add this updated README.md file to your GitHub repository to provide users with information about your project, how to run it, and how to add more commands.
