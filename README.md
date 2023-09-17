@@ -1,4 +1,4 @@
-# Updates Commands in Python
+# Updates Multiple Terminal Commands in Python
 
 ## Overview
 
@@ -40,6 +40,18 @@ This repository contains a Python script for running a series of update commands
     python3 UpdatesTerminalCommandsPython.py
     ```
 
+## Adding More Commands
+
+If you wish to add more commands to the script, you can simply extend the `commands` list in the `main` function. For example:
+
+```python
+commands = [
+    "brew upgrade && brew cleanup && brew autoremove",
+    "conda update --all -y",
+    "rustup update",
+    "your_new_command_here"  # Add your new command here
+]
+```
 
 ## Code Explanation
 
@@ -75,4 +87,4 @@ Feel free to fork the project, open a PR, or submit an issue.
 
 ---
 
-You can add this README.md file to your GitHub repository to provide users with information about your project, how to run it, and what it does.
+You can add this updated README.md file to your GitHub repository to provide users with information about your project, how to run it, and how to add more commands.
