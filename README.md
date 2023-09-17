@@ -37,10 +37,9 @@ This repository contains a Python script for running a series of update commands
 3. **Run the Python Script**:
 
     ```bash
-    python3 your_script_name.py
+    python3 UpdatesTerminalCommandsPython.py
     ```
 
-    Replace `your_script_name.py` with the actual name of the Python script.
 
 ## Code Explanation
 
