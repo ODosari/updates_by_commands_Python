@@ -4,7 +4,7 @@
 
 This repository contains a Python script for running a series of update commands in a Zsh shell. The script is designed to execute commands for updating Homebrew, Conda, and Rust.
 
-- **Name**: updates_commands_rust
+- **Name**: updates_commands_python
 - **Version**: 0.1.0
 - **By**: Obaid Aldosari
 - **GitHub**: [https://github.com/ODosari/UpdatesTerminalCommandsPython](https://github.com/ODosari/UpdatesTerminalCommandsPython)
