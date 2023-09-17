@@ -1,4 +1,4 @@
-#name = "updates_commands_rust"
+#name = "updates_commands_python"
 #version = "0.1.0"
 #by = "Obaid Aldosari"
 #github = "https://github.com/ODosari/UpdatesTerminalCommandsPython"
