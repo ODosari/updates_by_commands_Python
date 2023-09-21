@@ -1,4 +1,4 @@
-# Updates Multiple Terminal Commands in Python
+# Updates Multiple Terminal Commands Using Python
 
 ## Overview
 
