@@ -1,5 +1,5 @@
 # Name = "updates_commands_python"
-# Version = "0.1.0"
+# Version = "0.1"
 # By = "Obaid Aldosari"
 # GitHub = "https://github.com/ODosari/UpdatesTerminalCommandsPython"
 

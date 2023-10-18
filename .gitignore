@@ -1,2 +1,4 @@
 .idea*
 
+/output_log.txt
+/config.json
