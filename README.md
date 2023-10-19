@@ -37,7 +37,12 @@ This repository contains a Python script for running a series of update commands
 3. **Run the Python Script**:
 
     ```bash
-    python3 updates_by_commands.py
+    python3 Updates_By_Commands_Basic.py
+    ```
+   For Basic execution, or the following for enhanced script:
+
+    ```bash
+    python3 Updates_By_Commands_Enhanced.py
     ```
 
 ## Adding More Commands

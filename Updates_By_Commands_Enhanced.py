@@ -1,5 +1,5 @@
 # Name = "updates_commands_python"
-# Version = "0.2"
+# Version = "0.3"
 # By = "Obaid Aldosari"
 # GitHub = "https://github.com/ODosari/UpdatesTerminalCommandsPython"
 
@@ -9,7 +9,7 @@ import os
 import datetime
 
 
-def create_config(file_path="config.json"):
+def create_config(file_path="updates_by_commands_config.json"):
     """Create a configuration file with default or user-specified commands."""
     default_commands = [
         "brew upgrade && brew cleanup && brew autoremove",
@@ -36,7 +36,7 @@ def create_config(file_path="config.json"):
         json.dump({"commands": commands_to_save}, file)
 
 
-def load_commands_from_config(file_path="config.json"):
+def load_commands_from_config(file_path="updates_by_commands_config.json"):
     """Load commands from a configuration file. Create one if it doesn't exist."""
     if not os.path.exists(file_path):
         create_config(file_path)
@@ -54,7 +54,7 @@ def run_command(update_commands):
         return f"Command '{update_commands}' failed with error: {e}"
 
 
-def log_output(command, output, file_path="output_log.txt"):
+def log_output(command, output, file_path="updates_by_commands_log.txt"):
     """Log the output of a command to a file."""
     current_time = datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p')
     with open(file_path, "a") as file:
