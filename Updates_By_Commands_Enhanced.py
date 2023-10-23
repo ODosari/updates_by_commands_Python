@@ -11,9 +11,6 @@ import datetime
 from System_Checks import check_platform, check_internet_connection
 
 
-
-
-
 def create_config(file_path="Updates_By_Commands_Config.json"):
     """Create a configuration file with default or user-specified commands."""
     default_commands = [
@@ -55,15 +52,18 @@ def run_command(update_commands):
     try:
         subprocess.run(update_commands, shell=True, executable="/bin/zsh", check=True)
     except subprocess.CalledProcessError as e:
-        print(f"Command '{update_commands}' failed with error: {e}")
-        return f"Command '{update_commands}' failed with error: {e}"
+        error_msg = f"Command '{update_commands}' failed with error: {e}"
+        print(f"\033[1;91m{error_msg}\033[0m")  # Error message in red
+        return error_msg
 
 
 def log_output(command, output, file_path="Updates_By_Commands_Log.txt"):
     """Log the output of a command to a file."""
-    current_time = datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p')
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
     with open(file_path, "a") as file:
-        file.write(f"[{current_time}] Command: {command}\nOutput:\n{output}\n{'='*50}\n")
+        file.write(
+            f"[{current_time}] Command: {command}\nOutput:\n{output}\n{'='*50}\n"
+        )
 
 
 def main():
@@ -82,12 +82,11 @@ def main():
 
 if __name__ == "__main__":
     os_details = check_platform()
-    print(f"==> Operating System Details: {os_details}")
+    print(f"\033[1;94m==> Operating System Details:\033[0m {os_details}")
 
     internet_status = check_internet_connection()
     if internet_status:
-        print("==> Internet connection is available.")
+        print("\033[1;92m==> Internet connection is available.\033[0m")
+        main()
     else:
-        print("==> No internet connection detected.")
-
-    main()
+        print("\033[1;91m==> No internet connection detected. Exiting.\033[0m")

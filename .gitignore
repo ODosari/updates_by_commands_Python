@@ -1,3 +1,4 @@
 .idea*
 /updates_by_commands_config.json
 /updates_by_commands_log.txt
+/test.py
