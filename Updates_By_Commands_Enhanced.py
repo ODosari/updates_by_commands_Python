@@ -8,6 +8,19 @@ import json
 import os
 import datetime
 
+from System_Checks import check_platform, check_internet_connection
+
+# Now you can use the functions in another_file.py
+
+os_details = check_platform()
+print(f"==> Operating System Details: {os_details}")
+
+internet_status = check_internet_connection()
+if internet_status:
+    print("==> Internet connection is available.")
+else:
+    print("==> No internet connection detected.")
+
 
 def create_config(file_path="Updates_By_Commands_Config.json"):
     """Create a configuration file with default or user-specified commands."""
