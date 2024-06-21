@@ -1,7 +1,7 @@
-# Name = "updates_commands_python"
-# Version = "0.3"
-# By = "Obaid Aldosari"
-# GitHub = "https://github.com/ODosari/UpdatesTerminalCommandsPython"
+# Name: "updates_commands_python"
+# Version: "0.3"
+# By: "Obaid Aldosari"
+# GitHub: "https://github.com/ODosari/UpdatesTerminalCommandsPython"
 
 import subprocess
 import json
