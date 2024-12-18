@@ -61,6 +61,7 @@ def create_config(file_path=CONFIG_FILE_PATH):
         "brew upgrade && brew cleanup && brew autoremove",
         "conda update --all -y",
         "rustup update",
+        "gcloud components update",
     ]
 
     print("Default commands are:")
