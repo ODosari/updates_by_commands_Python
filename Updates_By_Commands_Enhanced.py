@@ -1,5 +1,5 @@
 # Name: "updates_commands_python"
-# Version: "0.4"
+# Version: "0.5"
 # By: "Obaid Aldosari"
 # GitHub: "https://github.com/ODosari/UpdatesTerminalCommandsPython"
 
@@ -61,6 +61,7 @@ def create_config(file_path=CONFIG_FILE_PATH):
         "brew upgrade && brew cleanup && brew autoremove",
         "conda update --all -y",
         "rustup update",
+        "npm update",
         "gcloud components update",
     ]
 
